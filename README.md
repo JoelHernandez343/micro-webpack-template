@@ -1,6 +1,7 @@
 # Micro template for webpack 5
 
-This template is for simple static web sites
+This template is for simple static web sites.
+
 Supports:
 
 - Webpack server with hot reload.
