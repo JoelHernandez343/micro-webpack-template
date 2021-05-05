@@ -19,7 +19,7 @@ Until I publish a npm's package, this is the only way:
 - Clone this repo without `.git` folder:
 
 ```
-wget https://github.com/JoelHernandez343/micro-webpack-template/archive/refs/heads/main.zip
+wget https://github.com/JoelHernandez343/micro-webpack-template/archive/refs/heads/main.zip -O micro-webpack-template-main.zip
 
 unzip micro-webpack-template-main.zip
 
