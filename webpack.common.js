@@ -7,7 +7,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
-  mode: 'development',
   entry: path.join(__dirname, 'src', 'js'),
   output: {
     filename: 'bundle.js',
@@ -18,12 +17,6 @@ export default {
     }),
     new MiniCssExtractPlugin(),
   ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 9000,
-    host: '0.0.0.0',
-    open: true,
-  },
   module: {
     rules: [
       {
@@ -33,6 +26,10 @@ export default {
       {
         test: /\.html$/,
         loader: 'html-loader',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'assets/resource',
       },
     ],
   },
